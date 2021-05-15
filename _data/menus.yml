@@ -1,21 +1,31 @@
 main:
-  - name: "Services"
-    url: "/services/"
+  - name: "Serviços"
+    url: "/servicos/"
     weight: 2
-  - name: "Team"
-    url: "/team/"
+  # - name: "Empresa"
+  #   url: "/sobre/"
+  #   weight: 3
+  - name: "Cidades Atendidas"
+    url: '/cidades'
     weight: 3
-  - name: "About"
-    url: "/about/"
+  - name: "Manual da Zincagem"
+    url: "/boas-praticas-de-fabricacao/"
     weight: 4
-  - name: "Contact"
-    url: "/contact/"
-    weight: 5
+  # - name: "Oportunidades"
+  #   url: "/classificados/"
+  #   weight: 5
+  # - name: "Vagas"
+  #   url: "/vagas/"
+  #   weight: 6
+  - name: "Contato"
+    url: "/contato/"
+    weight: 7
 
 footer:
-  - name: "Home"
-    url: "/"
+  - name: "Venda de jornal"
+    url: "/compramos-jornal/"
     weight: 1
-  - name: "Contact"
-    url: "/contact/"
+  - name: "Entrar em contato"
+    url: "/contato/"
     weight: 2
+

@@ -1,7 +1,15 @@
 <div class="call">
   <div class="call-box-top">
     {% if site.data.contact.phone %}
-        <div class="call-phone"><strong>Phone: </strong> {{ site.data.contact.phone }} </div>
+    <div class="call-phone"><strong>Telefone: </strong> {{ site.data.contact.phone }} </div>
+    {% endif %}
+    {% if site.data.contact.whatsapp %}
+    <div class="call-phone"><strong>WhatsApp: </strong> <a
+        href="https://api.whatsapp.com/send?phone=5543999143694&text=Ol%C3%A1%2C%20gostaria%20de%20uma%20informa%C3%A7%C3%A3o">
+        <img
+          src="https://www.convertte.com.br/cvtt/wp-content/themes/cvtt_v3/assets/gerador-link-new/images/wpp-logo.svg"
+          alt="" class="img" style="height:18px">
+        {{ site.data.contact.whatsapp }}</a> </div>
     {% endif %}
     {% if site.data.contact.email %}
     <div class="call-email"><strong>Email: </strong>
@@ -11,9 +19,10 @@
     </div>
     {% endif %}
   </div>
-    {% if include.show_button %}
-      <div class="call-box-bottom">
-        <a href="{{ site.data.contact.contact_button_link }}" class="button">Contact</a>
-      </div>
-    {% endif %}
+  {% if include.show_button %}
+  <div class="call-box-bottom">
+    <a href="https://maps.google.com/maps?ll=-23.28666,-51.208882&z=13&t=m&hl=pt&gl=US&mapclient=embed&cid=6986290246502533270"
+      class="button" style="text-decoration:none">Ver no Mapa</a>
+  </div>
+  {% endif %}
 </div>

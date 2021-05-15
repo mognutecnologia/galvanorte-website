@@ -1,17 +1,24 @@
 [
   {
-    "title": "Free Consultation",
-    "description": "New clients receive an obligation free consultation.",
-    "image": "images/features/noun_branding_1885335.svg"
+    "title": "Qualidade",
+    "description": "Com qualidade seus produtos valem mais. Estamos focados em superar expectativas.",
+    "more" :{
+      "title": "Como você também pode contribuir?",
+      "link": "/boas-praticas-de-fabricacao"
+    },
+    "alt": "Icone de Galvanização com qualidade",
+    "image": "images/features/qualidade.png"
   },
   {
-    "title": "Certified Accountants",
-    "description": "All members of our team are certified accountants.",
-    "image": "images/features/noun_The Process_1885341.svg"
+    "title": "Preço",
+    "description": "Afinal, já entendemos que para a empresa crescer, nossos clientes precisam crescer também.",
+    "alt": "Icone de Galvanização com qualidade",
+    "image": "images/features/barato.png"
   },
   {
-    "title": "Tax Compliance",
-    "description": "We stay up to date on the latest changes to the tax code.",
-    "image": "images/features/noun_3d modeling_1885342.svg"
+    "title": "Prazo",
+    "description": "Buscamos sempre ampliar a capacidade produtiva para entregar com os melhores prazos.",
+    "alt": "Icone de Galvanização rápida",
+    "image": "images/features/rapido.png"
   }
 ]
