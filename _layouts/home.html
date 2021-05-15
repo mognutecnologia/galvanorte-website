@@ -26,7 +26,7 @@ bodyClass: page-home
 </div>
 
 <div class="strip">
-  <div class="container pt-6 pb-6 pb-md-10">
+  <div class="container pt-2 pb-2 pb-md-4">
     <div class="row justify-content-start">
       {% assign weighted_services = site.servicos | sort: "weight" %}
       {% for service in weighted_services %}
@@ -48,7 +48,7 @@ bodyClass: page-home
     </div>
     <div class="row justify-content-center">
       <div class="col-auto">
-        <a class="button button-primary" href="{{ " services" | relative_url }}">Ver todos os serviços</a>
+        <a class="button button-primary" href="/servicos">Ver todos os serviços</a>
       </div>
     </div>
   </div>

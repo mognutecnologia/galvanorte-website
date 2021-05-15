@@ -72,7 +72,7 @@ Estamos em fase de análise e projeto para **iniciar no futuro** a prestação d
   <p style="line-height:30px;">A maioria das peças que eu galvanizo são <input name="tipospecas" id="tipospecas" style="width:300px" placeholder="estruturas, tubos, tesouras..." />, e na média as maiores chegam a ter aprox. <input name="tamanhospecas" id="tamanhospecas" placeholder="comp. x altura x largura" /> em metros. Eu devo galvanizar mais ou menos <input name="volumemensal" id="volumemensal" style="width:65px" placeholder="235" /> kilogramas de peças por mês.</p>
   <div>
     <a href="https://api.whatsapp.com/send?phone=5543999143694&text=Ol%C3%A1.%20Tenho%20algumas%20pe%C3%A7as%20para%20galvanizar%20a%20fogo.">
-        <button>
+        <button type="button">
         <img src="https://www.convertte.com.br/cvtt/wp-content/themes/cvtt_v3/assets/gerador-link-new/images/wpp-logo.svg" alt="whatsapp icone" class="wp-img">
         <span>Mandar foto por whatsapp</span>
         </button>
