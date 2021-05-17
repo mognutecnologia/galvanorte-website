@@ -1,5 +1,6 @@
 ---
-title: "Galvanização Eletrolítica"
+title: "Galvanorte Galvanização - Serviços de Galvanização a Frio"
+head-title: "Galvanização Eletrolítica"
 featured: true
 weight: 1
 layout: service

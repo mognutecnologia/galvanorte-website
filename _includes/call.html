@@ -1,21 +1,17 @@
 <div class="call">
   <div class="call-box-top">
     {% if site.data.contact.phone %}
-    <div class="call-phone"><strong>Telefone: </strong> {{ site.data.contact.phone }} </div>
+    <div class="call-phone my-1"><strong>Telefone: </strong> {{ site.data.contact.phone }} </div>
     {% endif %}
     {% if site.data.contact.whatsapp %}
-    <div class="call-phone"><strong>WhatsApp: </strong> <a
+    <div class="call-phone py-1"><strong>WhatsApp: </strong> <a class="button" style="background-color:#25D366"
         href="https://api.whatsapp.com/send?phone=5543999143694&text=Ol%C3%A1%2C%20gostaria%20de%20uma%20informa%C3%A7%C3%A3o">
-        <img
-          src="https://www.convertte.com.br/cvtt/wp-content/themes/cvtt_v3/assets/gerador-link-new/images/wpp-logo.svg"
-          alt="" class="img" style="height:18px">
+        <img src="/images/logo/whatsapp.svg" alt="" class="img" style="height:18px">
         {{ site.data.contact.whatsapp }}</a> </div>
     {% endif %}
     {% if site.data.contact.email %}
-    <div class="call-email"><strong>Email: </strong>
-      <a href="mailto:{{ .site.data.contact.email }}">
-        {{ site.data.contact.email }}
-      </a>
+    <div class="call-emai mt-1"><strong>Email: </strong>
+      {{ site.data.contact.email }}
     </div>
     {% endif %}
   </div>

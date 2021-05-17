@@ -1,5 +1,6 @@
 ---
-title: 'Boas práticas de fabricação'
+title: 'Dicas para aumentar a qualidade da Zincagem - Galvanorte'
+head-title: 'Boas práticas de fabricação'
 date: 2021-05-15T17:01:34-03:00
 layout: page
 bodyClass: page-informative

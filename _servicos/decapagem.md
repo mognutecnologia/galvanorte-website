@@ -1,5 +1,6 @@
 ---
-title: "Decapagem"
+title: "Galvanorte Galvanização - Serviços de Decapagem"
+head-title: "Decapagem"
 featured: true
 weight: 3
 layout: service

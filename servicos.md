@@ -1,5 +1,5 @@
 ---
-title: Services
+title: Galvanorte Galvanização - Serviços Prestados
 layout: services
 intro_image: "images/illustrations/factory.svg"
 intro_image_absolute: true

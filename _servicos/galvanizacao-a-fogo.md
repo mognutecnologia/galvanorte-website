@@ -1,5 +1,6 @@
 ---
-title: "Galvanização a Fogo"
+title: "Galvanorte Galvanização - Serviços de Galvanização a Fogo"
+head-title: "Galvanização a Fogo"
 featured: true
 weight: 5
 layout: service

@@ -1,5 +1,6 @@
 ---
-title: "Fosfatização"
+title: "Galvanorte Galvanização - Serviços de Fosfatização"
+head-title: "Fosfatização"
 featured: true
 weight: 2
 layout: service

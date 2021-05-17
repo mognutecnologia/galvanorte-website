@@ -1,5 +1,6 @@
 ---
-title: "Limpeza Química de Máquinas"
+title: "Galvanorte Galvanização - Serviços de Limpeza Química de Máquinas"
+head-title: "Limpeza Química de Máquinas"
 featured: true
 weight: 4
 layout: service

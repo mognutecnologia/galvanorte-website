@@ -1,15 +1,18 @@
 ---
-title: "Ibiporã"
+title: "Galvanorte Galvanização - Atendemos Ibiporã"
+city: "Ibiporã"
 date: 2021-05-15T15:15:26-03:00
 featured: true
 weight: 3
 layout: city
 ---
 
-Abaixo encontram-se listados os serviços oferecidos para a cidade de {{ page.title }}.
+Estamos localizados em Londrina, mas podemos programar a coleta e devolução do seu material com nossos caminhões.
 
-Podemos programar a coleta e devolução com nossos caminhões.
+<a style="text-decoration: none" class="button" href="https://api.whatsapp.com/send?phone=5543999143694&text=Ol%C3%A1%2C%20gostaria%20de%20uma%20coleta%20de%20material">Solicitar uma coleta</a>
 
-Lembrando que se você possui um alto volume de peças, ou possui alta frequência no envio de peças para galvanização ou algum dos nossos serviços [consulte-nos](/contato). 
+Lembrando que se você possui um alto volume de peças, ou possui alta frequência no envio de peças para galvanização (zincagem), decapagem, fosfatização e limpeza química em {{ page.city }} ou algum dos nossos outros serviços [consulte-nos](/contato). 
 
 <a href="https://maps.google.com/maps?ll=-23.28666,-51.208882&z=13&t=m&hl=pt&gl=US&mapclient=embed&cid=6986290246502533270" class="button" style="text-decoration:none">Encontrar a melhor rota no Google</a>
+
+Abaixo encontram-se listados os serviços oferecidos para a cidade de {{ page.city }}:
