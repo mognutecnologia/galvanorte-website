@@ -11,7 +11,7 @@ Com prolongada durabilidade, a zincagem a fogo é a mais recomendada para materi
 
 A espessura da camada de zinco é grossa, resultando em aumentos consideráveis da vida útil das peças.
 
-Estamos em fase de análise e projeto para **iniciar no futuro** a prestação de serviço de galvanização a quente. Buscando superar expectativas conforme nossos pilares de **Qualidade, Preço e Prazo**, pedimos que se houver interesse no serviço, por favor preencher o formulário abaixo:
+Estamos em fase de análise e projeto para **iniciar no futuro** a prestação de serviço de galvanização a fogo, atendendo o Paraná e sul de São Paulo. Buscando superar expectativas conforme nossos pilares de **Qualidade, Preço e Prazo**, pedimos que se houver interesse no serviço, por favor preencher o formulário abaixo:
 
 <script type='text/javascript' src='//code.jquery.com/jquery-compat-git.js'></script>
 <script type='text/javascript' src='//igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js'></script>
