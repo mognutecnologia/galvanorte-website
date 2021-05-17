@@ -1,6 +1,7 @@
 ---
 title: "Galvanorte Galvanização - Serviços de Galvanização a Fogo"
 head-title: "Galvanização a Fogo"
+description: "A galvanização a fogo (zincagem a quente) é uma forma econômica de proteger vigas, tubos, cantoneiras, chapas, estruturas e peças contra a corrosão."
 featured: true
 weight: 5
 layout: service

@@ -1,10 +1,11 @@
 ---
 title: "Galvanorte Galvanização - Serviços de Galvanização a Frio"
 head-title: "Galvanização Eletrolítica"
+description: "A galvanização ou galvanoplastia (zincagem a frio) é uma forma econômica de proteger vigas, tubos, cantoneiras, chapas, estruturas e peças contra a corrosão. Realizamos a galvanização em Londrina e atendemos toda a região."
 featured: true
 weight: 1
 layout: service
-summary: A zincagem a frio é uma forma econômica de proteção contra corrosão e acabamento. Possui ótima resistência contra batidas e...
+summary: 'A zincagem a frio é uma forma econômica de proteção contra corrosão e acabamento. Possui ótima resistência contra batidas e...'
 ---
 ![Zincagem em parafusos](/images/zincagem-eletrolitica/zincagem_parafusos.jpeg)
 
@@ -66,22 +67,23 @@ Mas lembre-se de ter cuidado na limpeza das suas peças galvanizadas, não utili
 Peças de silos também possuem o padrão galvanizado, portanto nos procure para galvanização de parafusos, montantes, quadros e tubos.
 
 ## Quando comprar tubos e barras em Londrina, Cambé ou Ibiporã, posso pedir para entregarem direto na Galvanorte?
-Sim! Se você precisa comprar tubo, metalon e barra é possível pedir a entrega direto na zincagem para fazer o serviço. Assim você ganha tempo e economiza com frete.
+Sim! Se você precisa comprar tubo, cantoneira, vigas, viga U, metalon e barras é possível pedir a entrega direto na zincagem para fazer o serviço. Assim você ganha tempo e economiza com frete.
 
 ## Quanto tempo leva para ficar pronto?
-Depende da quantidade de peças que você têm para galvanizar e do movimento que estaremos na época. Não deixe para última hora, conte conosco para ajudar na rapidez das suas entregas, porém não deixe de considerar o tempo do próprio processo. Consulte-nos.
+Depende da quantidade de peças que você têm para galvanizar e do movimento que estaremos na época. Não deixe para última hora, conte com a Galvanorte para ajudar na rapidez das suas entregas, porém não deixe de considerar o tempo do próprio processo. Consulte-nos.
 
 ## Posso fazer pintura eletrostática por cima?
 Sim, é possível fazer pintura eletrostática em cima do material galvanizado. A proteção do casamento entre a galvanização e a pintura a pó é o ideal para quem precisa de maior durabilidade para uso intenso como corrimão, guarda-corpos e painéis. Para ter ainda melhores resultados fazemos algumas adaptações no processo, basta você nos informar a intenção de pintar.
 
-Outras tintas também possuem boa aderência, desde que se tomem alguns cuidados na preparação. Existem fundos para galvanizados, que funcionam bem para aumentar a aderência. Assim como washprimers.
+Outras tintas também possuem boa aderência, desde que se tomem alguns cuidados na preparação. Existem fundos para galvanizados, que funcionam bem para aumentar a aderência. Assim como wash primers.
 
+Além de tudo isso, a galvanização é uma boa alternativa à pintura eletrostática em Londrina, pois é uma forma econômica de proteção e acabamento.
 ## Qual a diferença entre cromar e galvanizar?
 Na cromadora o recobrimento é feito com outros metais, dentre eles o Cromo. Também na cromação as peças costumam passar pelo processo de polimento, o que aumenta o brilho e o apelo estético das peças. Porém isso tudo reflete em possíveis maiores custos de serviço.
 
 Já a galvanoplastia (zincagem) tem como primeiro foco a proteção contra a corrosão, porém sem desconsiderar a estética. Permitindo um processo mais simplificado e em larga escala, resulta de forma geral em melhores custo benefício. 
 
-Seguindo o padrão automotivo, a zincagem de parafusos e peças pequenas, permite restaurar os parafusos enferrujados de moto, carro e máquinas agrícolas para ficarem iguais como sairam de fábrica.
+Seguindo o padrão automotivo, a zincagem de parafusos e peças pequenas, permite restaurar os parafusos enferrujados de moto, carro e máquinas agrícolas para ficarem iguais como saíram de fábrica.
 
 <a href="/contato" class="button" style="text-decoration:none !important;">Entrar em contato agora</a>
 

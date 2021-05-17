@@ -1,5 +1,6 @@
 ---
 title: Galvanorte Galvanização - Entre em contato
+description: "Telefone da galvanização. A Galvanorte presta serviços de Galvanização (Zincagem), decapagem, fosfatização e limpeza química em Londrina. Atendemos todas as cidades da região do Paraná e São Paulo. Solicite uma coleta em Cambé, Ibiporã, Apucarana, Arapongas, Rolândia e Maringá."
 head-title: 'Contato'
 layout: contact
 bodyClass: page-contact

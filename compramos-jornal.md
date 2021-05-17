@@ -1,7 +1,7 @@
 ---
 title: 'Compramos Jornal em Londrina'
+description: "Compra-se jornal usado em Londrina. O jornal pode estar velho. Buscamos quem venda jornal em Londrina."
 head-title: 'Compramos Jornal'
-date: 2021-05-15T17:01:34-03:00
 layout: page
 bodyClass: page-informative
 ---
@@ -26,5 +26,7 @@ Quantidades acima de 70kg podemos buscar, dependendo da localização. [Mande um
 Se você é zelador de condomínio em Londrina, é uma boa oportunidade de organizar a coleta e separação de jornal usado.
 
 Para quem faz a coleta de material reciclado em Londrina e pode fazer a separação do jornal, entre em contato pois podemos fazer a compra e inclusive vamos buscar.
+
+Aceitamos doação de jornal usado e velho.
 
 Londrina, Cambé e Ibiporã - Paraná - 2020

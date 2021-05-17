@@ -1,12 +1,13 @@
 ---
 title: "Galvanorte Galvanização - Serviços de Fosfatização"
 head-title: "Fosfatização"
+description: "A fosfatização serve como preparação da superfície para receber óleo, cera e sabão para proteção ou redução de atrito na fabricação. Realizamos a fosfatização em Londrina, e atendemos toda a região."
 featured: true
 weight: 2
 layout: service
 ---
 
-Conformação a frio, redução de atrito, proteção contra corrosão e preparação da superfície para pintura são termos comumente associados com a fosfatização. Ela tem como objetivo o aumento da área superfícial e a preparação da superfície metalica para a próxima etapa do processo, promovendo uma ótima aderência de lubrificantes, óleos protetivos, sabão e tintas.
+Conformação a frio, redução de atrito, proteção contra corrosão e preparação da superfície para pintura são termos associados com a fosfatização. Ela tem como objetivo o aumento da área superfícial e a preparação da superfície metálica para a próxima etapa do processo, promovendo uma ótima aderência de lubrificantes, óleos protetivos, sabão e tintas.
 
 
 ## Aplicações: 

@@ -1,7 +1,8 @@
 ---
 title: "Galvanorte Galvanização - Atendemos Ibiporã"
 city: "Ibiporã"
-date: 2021-05-15T15:15:26-03:00
+description: "A Galvanorte presta serviços de Galvanização (Zincagem), decapagem, fosfatização e limpeza química em Londrina. Atendemos a cidade de Ibiporã e região."
+date: 2021-05-17T13:36:02-03:00
 featured: true
 weight: 3
 layout: city
