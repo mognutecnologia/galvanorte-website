@@ -17,20 +17,13 @@ Para tornar galvanização viável e ter bons resultados em questão de qualidad
 4. Evite furos não passantes.
 5. Tire as porcas dos parafusos, para garantir que a rosca seja zincada por completa.
 ## Soldas:
-1. Solda elétrica (eletrodo) bata as casquinhas/escória, pois elas não saem no processo, e o zinco não adere nelas.
+1. Solda elétrica (eletrodo) remova as carepas/escória, pois elas não serão removidas no processo, e elas não são zincadas.
 2. Solde apenas a parte da frente ou a de trás. Caso precise reforçar com solda dos dois lados, tente alternar para que não se forme cavidades de retenção de líquidos.
-3. Sempre que possível inclua o processo de desbaste ou escovamento da solda, removendo os resíduos comuns como óleo queimado.
-
-## Para peças pequenas (Até 30cm)
-1. Evite peças de chapas totalmente planas, pois elas colam umas nas outras.
-2. Para poucas quantidades de porcas e arruelas, especialmente para peças de carro, moto, máquina e tratores, passe um arame formando um colar com as peças. Façam-os firmes e do tamanho máximo de um colar de mulher.
-
+3. Sempre que possível inclua o processo de desbaste ou escovamento da solda, removendo os resíduos de óleo queimado.
 ## Para peças médias (Acima de 30cm)
-1. Toda peça precisa ter furo ou local para pendurar (mínimo 5mm de diâmetro). Em casos de arames, precisam ter a ponta dobrada.
-2. Em caso de tubos, metalons e barras, prefira galvanizar ainda com seis metros, para depois processar.
+1. Toda peça precisa ter furo ou local para pendurar (mínimo 5mm de diâmetro). Em casos de arames sem furo, precisam ter a ponta dobrada.
+2. Em caso de tubos, metalons e barras, prefira galvanizá-los ainda com seis metros, para depois processar.
 
 ## Para peças grandes (Acima de 1,5 metros)
-1. Peças grandes precisam dos melhores escoamentos. Estruturas feitas de vigas U ou enrijecidas, que possam represar líquidos ou criar bolhas de ar, precisam ser furadas buscando ótimo escoamento. Quanto mais furos, melhor.
-2. Telas artísticas e chapas expandidas são melhores quando já estão soldadas o reforço ou estrutura. Porém se já estiverem galvanizadas, traga ela antes para que tiramos o zinco primeiro. Ficará mais rápido para galvanizar depois, e mais fácil para você soldar.
-3. Peças com chapas já galvanizadas. Consulte conosco a viabilidade da re-zincagem.
-4. Sempre dê preferência para fabricar estruturas desmontáveis, por exemplo em uma prateleira, trazer a estrutura toda desmontada e separadas das bandejas.
+1. Peças grandes precisam dos melhores escoamentos. Estruturas feitas de vigas U ou enrijecidas, que possam represar líquidos ou formar bolhas de ar, precisam ser furadas pelo fabricante. Quanto mais furos, melhor.
+2. Sempre dê preferência para fabricar estruturas desmontáveis. Por exemplo em uma prateleira, trazer a estrutura toda desmontada e separadas das bandejas.
