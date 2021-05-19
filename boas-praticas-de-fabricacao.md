@@ -23,7 +23,6 @@ Para tornar a galvanização viável e ter bons resultados em questão de qualid
 ## Para peças médias (Acima de 30cm)
 1. Toda peça precisa ter furo ou local para pendurar (mínimo 5mm de diâmetro). Em casos de arames sem furo, precisam ter a ponta dobrada.
 2. Em caso de tubos, metalons e barras, prefira galvanizá-los ainda com seis metros, para depois processar.
-
 ## Para peças grandes (Acima de 1,5 metros)
 1. Peças grandes precisam dos melhores escoamentos. Estruturas feitas de vigas U ou enrijecidas, que possam represar líquidos ou formar bolhas de ar, precisam ser furadas pelo fabricante. Quanto mais furos e maiores, melhor.
 2. Sempre dê preferência para fabricar estruturas desmontáveis. Por exemplo em uma prateleira, trazer a estrutura toda desmontada e separadas das bandejas.
