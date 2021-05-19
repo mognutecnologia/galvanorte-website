@@ -7,17 +7,15 @@ bodyClass: page-informative
 ---
 [Clique aqui para abrir este guia em PDF](/arquivo/guia-fabricacao-galvanorte.pdf){:target="_blank"}
 
-Para tornar galvanização viável e ter bons resultados em questão de qualidade, recomendamos:
+Para tornar galvanização viável e ter bons resultados em questão de qualidade, recomendamos que considerem os pontos abaixo. O ponto 1 é obrigatório.
 
 ## Para todos os tipos de peça:
 1. <strong style="color:red;font-weight:600">Obrigatório</strong>: Garantir o escoamento de líquidos **por dentro de todos** os tubos e cavidades fechadas. Sempre um **par de furos**, perto de cada extremidade, maior que 1/5 do diâmetro da peça.
 ![Escoamento para uma boa galvanização](/images/boas-praticas/furos_pecas.png)
-2. Evite formatos que prendam ou arrastem líquidos ou formem bolhas de ar (formato de pote ou bolso).
-![Problema de escorrimento por conta de chapas juntas](/images/boas-praticas/bolso.jpeg)
-3. Evite quinas e cantos fechados, efetue sempre que possível um furo nas quinas. Quanto maior melhor.
-![Quina furada recomendação](/images/boas-praticas/quina_furada.jpeg)
+2. Evite formatos que prendam ou arrastem líquidos ou formem bolhas de ar.
+3. Evite quinas e cantos fechados, sempre que possível promova um afastamento ou furo nas quinas.
 4. Evite furos não passantes.
-5. Tire as porcas dos parafusos, para que a rosca seja zincada por completa.
+5. Tire as porcas dos parafusos, para garantir que a rosca seja zincada por completa.
 6. Evite fabricar material galvanizado junto com material de chapa bruta. Consulte-nos para fazer a decapagem do material zincado primeiro. Inclusive vai facilitar para soldar.
 
 ## Soldas:
