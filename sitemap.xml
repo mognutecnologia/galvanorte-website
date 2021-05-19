@@ -1,107 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
-<url>
-  <loc>https://www.galvanorte.com.br/</loc>
-  <lastmod>2021-05-17T14:45:14+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.galvanorte.com.br/servicos/</loc>
-  <lastmod>2021-05-17T14:45:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.galvanorte.com.br/cidades/</loc>
-  <lastmod>2021-05-17T14:45:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.galvanorte.com.br/boas-praticas-de-fabricacao/</loc>
-  <lastmod>2021-05-17T14:45:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.galvanorte.com.br/contato/</loc>
-  <lastmod>2021-05-17T14:45:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.galvanorte.com.br/servicos/zincagem-a-frio/</loc>
-  <lastmod>2021-05-17T14:45:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.galvanorte.com.br/servicos/fosfatizacao/</loc>
-  <lastmod>2021-05-17T14:45:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.galvanorte.com.br/servicos/decapagem/</loc>
-  <lastmod>2021-05-17T14:45:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.galvanorte.com.br/servicos/limpeza-quimica-maquinas/</loc>
-  <lastmod>2021-05-17T14:45:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.galvanorte.com.br/servicos/galvanizacao-a-fogo/</loc>
-  <lastmod>2021-05-17T14:45:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.galvanorte.com.br/compramos-jornal/</loc>
-  <lastmod>2021-05-17T14:45:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.galvanorte.com.br/cidades/londrina/</loc>
-  <lastmod>2021-05-17T14:45:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.galvanorte.com.br/cidades/cambe/</loc>
-  <lastmod>2021-05-17T14:45:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.galvanorte.com.br/cidades/ibipora/</loc>
-  <lastmod>2021-05-17T14:45:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.galvanorte.com.br/cidades/rolandia/</loc>
-  <lastmod>2021-05-17T14:45:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.galvanorte.com.br/cidades/apucarana/</loc>
-  <lastmod>2021-05-17T14:45:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.galvanorte.com.br/cidades/arapongas/</loc>
-  <lastmod>2021-05-17T14:45:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.galvanorte.com.br/cidades/maringa/</loc>
-  <lastmod>2021-05-17T14:45:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.galvanorte.com.br/arquivo/guia-fabricacao-galvanorte.pdf</loc>
-  <lastmod>2021-05-17T14:45:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+  <url>
+    <loc>https://www.galvanorte.com.br/</loc>
+    <lastmod>2021-05-17T14:45:14+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://www.galvanorte.com.br/servicos/</loc>
+    <lastmod>2021-05-17T14:45:14+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.galvanorte.com.br/cidades/</loc>
+    <lastmod>2021-05-17T14:45:14+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.galvanorte.com.br/boas-praticas-de-fabricacao/</loc>
+    <lastmod>2021-05-17T14:45:14+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.galvanorte.com.br/contato/</loc>
+    <lastmod>2021-05-17T14:45:14+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.galvanorte.com.br/servicos/zincagem-a-frio/</loc>
+    <lastmod>2021-05-17T14:45:14+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.galvanorte.com.br/servicos/fosfatizacao/</loc>
+    <lastmod>2021-05-17T14:45:14+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.galvanorte.com.br/servicos/decapagem/</loc>
+    <lastmod>2021-05-17T14:45:14+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.galvanorte.com.br/servicos/limpeza-quimica-maquinas/</loc>
+    <lastmod>2021-05-17T14:45:14+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.galvanorte.com.br/compramos-jornal/</loc>
+    <lastmod>2021-05-17T14:45:14+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.galvanorte.com.br/cidades/londrina/</loc>
+    <lastmod>2021-05-17T14:45:14+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.galvanorte.com.br/cidades/cambe/</loc>
+    <lastmod>2021-05-17T14:45:14+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.galvanorte.com.br/cidades/ibipora/</loc>
+    <lastmod>2021-05-17T14:45:14+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.galvanorte.com.br/cidades/rolandia/</loc>
+    <lastmod>2021-05-17T14:45:14+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.galvanorte.com.br/cidades/apucarana/</loc>
+    <lastmod>2021-05-17T14:45:14+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.galvanorte.com.br/cidades/arapongas/</loc>
+    <lastmod>2021-05-17T14:45:14+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.galvanorte.com.br/cidades/maringa/</loc>
+    <lastmod>2021-05-17T14:45:14+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.galvanorte.com.br/arquivo/guia-fabricacao-galvanorte.pdf</loc>
+    <lastmod>2021-05-17T14:45:14+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
 
 
 </urlset>
