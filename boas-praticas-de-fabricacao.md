@@ -16,8 +16,6 @@ Para tornar galvanização viável e ter bons resultados em questão de qualidad
 3. Evite quinas e cantos fechados, sempre que possível promova um afastamento ou furo nas quinas.
 4. Evite furos não passantes.
 5. Tire as porcas dos parafusos, para garantir que a rosca seja zincada por completa.
-6. Evite fabricar material galvanizado junto com material de chapa bruta. Consulte-nos para fazer a decapagem do material zincado primeiro. Inclusive vai facilitar para soldar.
-
 ## Soldas:
 1. Solda elétrica (eletrodo) bata as casquinhas/escória, pois elas não saem no processo, e o zinco não adere nelas.
 2. Solde apenas a parte da frente ou a de trás. Caso precise reforçar com solda dos dois lados, tente alternar para que não se forme cavidades de retenção de líquidos.
