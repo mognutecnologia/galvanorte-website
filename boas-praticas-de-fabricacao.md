@@ -7,7 +7,7 @@ bodyClass: page-informative
 ---
 [Clique aqui para abrir este guia em PDF](/arquivo/guia-fabricacao-galvanorte.pdf){:target="_blank"}
 
-Para tornar galvanização viável e ter bons resultados em questão de qualidade, recomendamos que considerem os pontos abaixo. O ponto 1 é obrigatório.
+Para tornar a galvanização viável e ter bons resultados em questão de qualidade, recomendamos que considerem os pontos abaixo. O ponto 1 é obrigatório.
 
 ## Para todos os tipos de peça:
 1. <strong style="color:red;font-weight:600">Obrigatório</strong>: Garantir o escoamento de líquidos **por dentro de todos** os tubos e cavidades fechadas. Sempre um **par de furos**, perto de cada extremidade, maior que 1/5 do diâmetro da peça.
@@ -25,5 +25,5 @@ Para tornar galvanização viável e ter bons resultados em questão de qualidad
 2. Em caso de tubos, metalons e barras, prefira galvanizá-los ainda com seis metros, para depois processar.
 
 ## Para peças grandes (Acima de 1,5 metros)
-1. Peças grandes precisam dos melhores escoamentos. Estruturas feitas de vigas U ou enrijecidas, que possam represar líquidos ou formar bolhas de ar, precisam ser furadas pelo fabricante. Quanto mais furos, melhor.
+1. Peças grandes precisam dos melhores escoamentos. Estruturas feitas de vigas U ou enrijecidas, que possam represar líquidos ou formar bolhas de ar, precisam ser furadas pelo fabricante. Quanto mais furos e maiores, melhor.
 2. Sempre dê preferência para fabricar estruturas desmontáveis. Por exemplo em uma prateleira, trazer a estrutura toda desmontada e separadas das bandejas.
