@@ -1,7 +1,7 @@
 ---
 title: "Galvanorte Galvanização - Serviços de Decapagem"
 head-title: "Decapagem"
-description: "A decapagem serve para recuperação e limpeza de peças enferrujadas, oxidadas, ou atacadas em outros processos de tratamento. Consiste em realizar um banho químico intenso com etapas envolvendo a remoção de sujeiras, remoção de óxidos e proteção. Realizamos o serviço em Londrina, e atendemos toda a região."
+description: "A decapagem serve para recuperação e limpeza de peças enferrujadas, oxidadas, ou atacadas em outros processos de tratamento. Consiste em realizar um banho químico intenso com etapas envolvendo a remoção de sujeiras, remoção de óxidos e proteção. Realizamos decapagem em Londrina, e atendemos toda a região."
 featured: true
 weight: 3
 layout: service
