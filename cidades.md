@@ -10,7 +10,7 @@ intro_image_hide_on_mobile: false
 
 Estamos localizados em Londrina, e atendemos com galvanização em todas as cidades vizinhas, e estados do Paraná e São Paulo.
 
-Podemos fazemos a coleta e entrega de material com nosso caminhão.
+Podemos agendar a coleta e entrega de material com nosso caminhão.
 
 <a style="text-decoration: none" class="button" href="https://api.whatsapp.com/send?phone=5543999143694&text=Ol%C3%A1%2C%20gostaria%20de%20uma%20coleta%20de%20material">Solicitar uma coleta</a>
 
