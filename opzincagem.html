@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Zincagem</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <style>
+        #app {
+            margin: 5%;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-gap: 10px 10px;
+            grid-template-columns: auto auto;
+        }
+
+
+
+        .square {
+            border: 1px solid #000;
+            border-radius: 5px;
+            text-align: center;
+            padding: 3px;
+        }
+
+        .square div {
+            margin-bottom: 5px;
+        }
+
+        #comentario {
+            margin: 3px;
+            width: 120px;
+        }
+
+        .input-num {
+            max-width: 30px;
+        }
+
+        .btn-simple {
+            font-size: 10px;
+        }
+
+        .busy {
+            background: #c5c5c5;
+        }
+
+        .zincando {
+            background: #f3f396;
+        }
+
+        .warning {
+            background: #cd4949;
+        }
+
+        .emptyparts {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="grid-container">
+            <gancheira v-for="rack in racks" v-bind:id="rack" v-bind:key="rack"
+                v-on:gancheira_concluida="concluir_gancheira"> </gancheira>
+            <addgancheira v-on:click="add_gancheira"> </addgancheira>
+        </div>
+        <h4>Produção</h4>
+        <ol>
+            <li v-for="gancheira in gancheiras">{{ gancheira.text }}</li>
+        </ol>
+        <a v-on:click="save_data" v-if="gancheiras.length >0" class="btn btn-primary" href="javascript:void(0)">Salvar
+            na Planilha</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+
+        const DEFAULT_ZINC_TIME = 15;
+
+        var gancheira = Vue.component('gancheira', {
+            props: ['id'],
+            data: function () {
+                return {
+                    state: "Livre",
+                    numpecas: 0,
+                    isZincando: false,
+                    isOverPlated: false,
+                    isCromatizando: false,
+                    isBusy: false,
+                    timer: null,
+                    comentarioPermanente: "",
+                    comentarioTemporario: "",
+                    processo: {
+                        idle: {
+                            inicio: "",
+                            fim: null,
+                            elapsedTime: {
+                                minutes: 0,
+                                seconds: 0
+                            }
+                        },
+                        load: {
+                            inicio: "",
+                            fim: null,
+                            elapsedTime: {
+                                minutes: 0,
+                                seconds: 0
+                            }
+                        },
+                        zincagem: {
+                            inicio: "",
+                            fim: null,
+                            elapsedTime: {
+                                minutes: 0,
+                                seconds: 0
+                            }
+                        },
+                        cromatizacao: {
+                            inicio: "",
+                            fim: null,
+                            elapsedTime: {
+                                minutes: 0,
+                                seconds: 0
+                            }
+                        },
+                        unload: {
+                            inicio: "",
+                            fim: null,
+                            elapsedTime: {
+                                minutes: 0,
+                                seconds: 0
+                            }
+                        }
+                    }
+                }
+            },
+            methods: {
+                start_load: function () {
+                    this.state = "Carregando";
+                    this.processo.idle.fim = new Date();
+                    this.processo.load.inicio = new Date();
+                    clearInterval(this.timer);
+                    this.timer = setInterval(this.updateElapsedTime, 1000);
+                },
+                start_zincagem: function () {
+                    this.state = "Zincando";
+                    this.processo.load.fim = new Date();
+                    this.processo.zincagem.inicio = new Date();
+                    clearInterval(this.timer);
+                    this.timer = setInterval(this.updateElapsedTime, 1000);
+                },
+                start_cromatizacao: function () {
+                    clearInterval(this.timer);
+                    this.timer = setInterval(this.updateElapsedTime, 1000);
+                    this.state = "Cromatizando";
+                    this.processo.zincagem.fim = new Date();
+                    this.processo.cromatizacao.inicio = new Date();
+                },
+                start_unload: function () {
+                    clearInterval(this.timer);
+                    this.timer = setInterval(this.updateElapsedTime, 1000);
+                    this.state = "Descarregando";
+                    this.processo.cromatizacao.fim = new Date();
+                    this.processo.unload.inicio = new Date();
+                },
+                finalizar_processo: function () {
+                    this.state = "Livre";
+                    this.processo.unload.fim = new Date();
+                    clearInterval(this.timer);
+                    this.timer = null;
+                    this.$emit("gancheira_concluida", {
+                        id: this.id,
+                        load: this.processo.load,
+                        zincagem: this.processo.zincagem,
+                        cromatizacao: this.processo.cromatizacao,
+                        unload: this.processo.unload,
+                        comentarioPermanente: this.comentarioPermanente,
+                        comentarioTemporario: this.comentarioTemporario,
+                        numpecas: this.numpecas
+                    });
+                    this.restartState();
+                },
+                restartState: function () {
+                    this.state = "Livre";
+                    this.isZincando = false;
+                    this.isCromatizando = false;
+                    this.timer = null;
+                    this.isBusy = false;
+                    this.isOverPlated = false;
+                    this.comentarioTemporario = "";
+                    this.processo = {
+                        idle: {
+                            inicio: "",
+                            fim: null,
+                            elapsedTime: {
+                                minutes: 0,
+                                seconds: 0
+                            }
+                        },
+                        load: {
+                            inicio: "",
+                            fim: null,
+                            elapsedTime: {
+                                minutes: 0,
+                                seconds: 0
+                            }
+                        },
+                        zincagem: {
+                            inicio: "",
+                            fim: null,
+                            elapsedTime: {
+                                minutes: 0,
+                                seconds: 0
+                            }
+                        },
+                        cromatizacao: {
+                            inicio: "",
+                            fim: null,
+                            elapsedTime: {
+                                minutes: 0,
+                                seconds: 0
+                            }
+                        },
+                        unload: {
+                            inicio: "",
+                            fim: null,
+                            elapsedTime: {
+                                minutes: 0,
+                                seconds: 0
+                            }
+                        }
+                    }
+
+                },
+                updateElapsedTime: function () {
+                    var timeNow = new Date();
+                    if (this.state == "Carregando") {
+                        if (!this.processo.load.fim) {
+                            this.processo.load.elapsedTime = {
+                                minutes: new Date(timeNow - this.processo.load.inicio).getUTCMinutes(),
+                                seconds: new Date(timeNow - this.processo.load.inicio).getUTCSeconds()
+                            }
+                        }
+                        else {
+                            this.processo.load.elapsedTime = {
+                                minutes: new Date(this.processo.load.fim - this.processo.load.inicio).getUTCMinutes(),
+                                seconds: new Date(this.processo.load.fim - this.processo.load.inicio).getUTCSeconds()
+                            }
+                        }
+                    }
+                    else if (this.state == "Zincando") {
+                        if (!this.processo.zincagem.fim) {
+                            this.processo.zincagem.elapsedTime = {
+                                minutes: new Date(timeNow - this.processo.zincagem.inicio).getUTCMinutes(),
+                                seconds: new Date(timeNow - this.processo.zincagem.inicio).getUTCSeconds()
+                            }
+                        }
+                        else {
+                            this.processo.zincagem.elapsedTime = {
+                                minutes: new Date(this.processo.zincagem.fim - this.processo.zincagem.inicio).getUTCMinutes(),
+                                seconds: new Date(this.processo.zincagem.fim - this.processo.zincagem.inicio).getUTCSeconds()
+                            }
+                        }
+                        if (this.processo.zincagem.elapsedTime.minutes > DEFAULT_ZINC_TIME) {
+                            this.isOverPlated = true;
+                        }
+                    }
+                    else if (this.state == "Cromatizando") {
+                        if (!this.processo.cromatizacao.fim) {
+                            this.processo.cromatizacao.elapsedTime = {
+                                minutes: new Date(timeNow - this.processo.cromatizacao.inicio).getUTCMinutes(),
+                                seconds: new Date(timeNow - this.processo.cromatizacao.inicio).getUTCSeconds()
+                            }
+                        }
+                        else {
+                            this.processo.cromatizacao.elapsedTime = {
+                                minutes: new Date(this.processo.cromatizacao.fim - this.processo.cromatizacao.inicio).getUTCMinutes(),
+                                seconds: new Date(this.processo.cromatizacao.fim - this.processo.cromatizacao.inicio).getUTCSeconds()
+                            }
+                        }
+                    }
+                    else if (this.state == "Descarregando") {
+                        if (!this.processo.unload.fim) {
+                            this.processo.unload.elapsedTime = {
+                                minutes: new Date(timeNow - this.processo.unload.inicio).getUTCMinutes(),
+                                seconds: new Date(timeNow - this.processo.unload.inicio).getUTCSeconds()
+                            }
+                        }
+                        else {
+                            this.processo.unload.elapsedTime = {
+                                minutes: new Date(this.processo.unload.fim - this.processo.unload.inicio).getUTCMinutes(),
+                                seconds: new Date(this.processo.unload.fim - this.processo.unload.inicio).getUTCSeconds()
+                            }
+                        }
+                    }
+
+                },
+                toggle_timer: function () {
+                    if (this.timer) {
+                        clearInterval(this.timer);
+                        this.timer = null;
+                    }
+                    else {
+                        this.timer = setInterval(this.updateElapsedTime, 1000);
+                    }
+                },
+                reset_timer: function (state) {
+                    this.processo[state].inicio = new Date();
+                }
+            },
+            watch: {
+                state: function () {
+                    if (this.state == "Zincando") {
+                        this.isZincando = true;
+                    }
+                    else {
+                        this.isZincando = false;
+                    }
+                    if (this.state !== 'Livre') {
+                        this.isBusy = true;
+                    }
+                    else {
+                        this.isBusy = false;
+                    }
+                }
+            },
+            computed: {
+                loadElapsedTime: function () {
+                    var elapsedTime = this.processo.load.elapsedTime;
+                    return ((elapsedTime.minutes < 10 ?
+                        "0" + elapsedTime.minutes :
+                        elapsedTime.minutes)
+                        + ":" +
+                        (elapsedTime.seconds < 10 ?
+                            "0" + elapsedTime.seconds :
+                            elapsedTime.seconds));
+                },
+                zincElapsedTime: function () {
+                    var elapsedTime = this.processo.zincagem.elapsedTime;
+                    return ((elapsedTime.minutes < 10 ?
+                        "0" + elapsedTime.minutes :
+                        elapsedTime.minutes)
+                        + ":" +
+                        (elapsedTime.seconds < 10 ?
+                            "0" + elapsedTime.seconds :
+                            elapsedTime.seconds));
+                },
+                cromatElapsedTime: function () {
+                    var elapsedTime = this.processo.cromatizacao.elapsedTime;
+                    return ((elapsedTime.minutes < 10 ?
+                        "0" + elapsedTime.minutes :
+                        elapsedTime.minutes)
+                        + ":" +
+                        (elapsedTime.seconds < 10 ?
+                            "0" + elapsedTime.seconds :
+                            elapsedTime.seconds));
+                },
+                unloadElapsedTime: function () {
+                    var elapsedTime = this.processo.unload.elapsedTime;
+                    return ((elapsedTime.minutes < 10 ?
+                        "0" + elapsedTime.minutes :
+                        elapsedTime.minutes)
+                        + ":" +
+                        (elapsedTime.seconds < 10 ?
+                            "0" + elapsedTime.seconds :
+                            elapsedTime.seconds));
+                }
+            },
+            template: `
+                <div class='gancheira square' v-bind:class='{busy: isBusy, zincando: isZincando, warning: isOverPlated}'>
+                    <div><span>Gancheira {{id}} </span></div>
+                    <div>
+                        <label for='numpecas'>N° de Peças:</label>
+                        <input v-bind:class="(numpecas == 0 ? 'emptyparts': '')" v-model='numpecas' id='numpecas' class='input-num display-num-pecas'/>
+                    </div>
+                    <div>
+                        <h6>{{ state }}</h6>
+                    </div>
+                    <div>
+                        <a class="btn btn-simple" href="javascript:void(0)" v-if='state == "Livre"' v-on:click="start_load">Carregar</a>
+                        <a class="btn btn-simple" href="javascript:void(0)" v-if='state == "Carregando"' v-on:click="start_zincagem">Iniciar Zincagem</a>
+                        <a class="btn btn-simple" href="javascript:void(0)" v-if='state == "Zincando"' v-on:click="start_cromatizacao">Cromatizar</a>
+                        <a class="btn btn-simple" href="javascript:void(0)" v-if='state == "Cromatizando"' v-on:click="start_unload">Descarregar</a>
+                        <a class="btn btn-simple" href="javascript:void(0)" v-if='state == "Descarregando"' v-on:click="finalizar_processo">Encerrar</a>
+                    </div>
+                    <div class="timer-display">
+                        <span>Carregando:</span>
+                        <span>{{ loadElapsedTime }}</span>
+                        <a href="javascript:void(0)" v-if='state == "Carregando"' v-on:click="reset_timer('load')">reset</a>
+                    </div>
+                    <div class="timer-display">
+                        <span>Zincando:</span>
+                        <span>{{ zincElapsedTime }}</span>
+                        <a href="javascript:void(0)" v-if='state == "Zincando"' v-on:click="reset_timer('zincagem')">reset</a>
+                    </div>
+                    <div class="timer-display">
+                        <span>Cromatizando:</span>
+                        <span>{{ cromatElapsedTime }}</span>
+                        <a href="javascript:void(0)" v-if='state == "Cromatizando"' v-on:click="reset_timer('cromatizacao')">reset</a>
+                    </div>
+                    <div class="timer-display">
+                        <span>Descarregando:</span>
+                        <span>{{ unloadElapsedTime }}</span>
+                        <a href="javascript:void(0)" v-if='state == "Descarregando"' v-on:click="reset_timer('unload')">reset</a>
+                    </div>
+                    <div>
+                        <label for='comentario'>Comentário Permanente</label>
+                        <input type="text" v-model='comentarioPermanente' id='comentarioPermanente'/>
+                    </div>
+                    <div>
+                        <label for='comentario'>Comentário Temporário</label>
+                        <input type="text" v-model='comentarioTemporario' id='comentarioTemporario'/>
+                    </div>
+                </div>
+                `
+        });
+
+        window.racks = [1, 2, 3, 4, 5, 6, 7, 8];
+
+        var add = Vue.component('addgancheira', {
+            data: function () {
+                return {
+                    state: "parado"
+                }
+            },
+            template: "<a href='javascript:void(0)' v-on:click='add_gancheira' class='add square'>+</a>",
+            methods: {
+                add_gancheira: function () {
+                    window.racks.push(window.racks[window.racks.length - 1] + 1);
+                    console.log("add gancheira");
+                },
+
+            }
+        });
+
+        var app = new Vue({
+            el: "#app",
+            data: {
+                gancheiras: [],
+                racks: window.racks
+            },
+            methods: {
+                concluir_gancheira: function (e) {
+                    e.conclusao = new Date().toLocaleString();
+                    this.gancheiras.push({
+                        id: e.id,
+                        numpecas: e.numpecas,
+                        load: {
+                            inicio: e.load.inicio,
+                            fim: e.load.fim
+                        },
+                        zincagem: {
+                            inicio: e.zincagem.inicio,
+                            fim: e.zincagem.fim
+                        },
+                        cromatizacao: {
+                            inicio: e.cromatizacao.inicio,
+                            fim: e.cromatizacao.fim
+                        },
+                        unload: {
+                            inicio: e.unload.inicio,
+                            fim: e.unload.fim
+                        },
+                        comentarioPermanente: e.comentarioPermanente,
+                        comentarioTemporario: e.comentarioTemporario,
+                        text: e.numpecas + " peças em " + e.zincagem.elapsedTime.minutes + " minutos e " + e.zincagem.elapsedTime.seconds + " segundos."
+                    })
+                },
+                save_data: function (e) {
+
+                    var data = JSON.stringify(this.gancheiras);
+                    console.log(data);
+                    M.toast({ html: 'Aguarde, salvando dados na planilha.' })
+
+                    fetch("https://script.google.com/macros/s/AKfycbwUOtl9jdNBb6-3uNbIMOTX4V1mSk87X1F5lnr0wX-L7CmrnHEa/exec", {
+                        method: 'POST',
+                        body: data,
+                        headers: {
+                            'Content-Type': 'text/plain;charset=utf-8',
+                        }
+                    }).then(response => {
+                        this.gancheiras = [];
+                        M.toast({ html: 'Salvo com sucesso!' })
+                    }).catch(err => {
+                        M.toast({ html: "Erro ao salvar na planilha" + err })
+                    });
+
+
+                }
+            }
+        });
+
+    </script>
+</body>
+
+</html>
