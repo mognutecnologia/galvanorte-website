@@ -1,6 +1,6 @@
-baseurl: '/'
+baseurl: "/"
 permalink: pretty
-title: 'Galvanorte'
+title: "Galvanorte"
 markdown: kramdown
 
 google_analytics_id: "UA-62950213-1"
@@ -13,9 +13,11 @@ logo:
   desktop: "images/logo/logo.svg"
   desktop_height: "36px"
   mobile_height: "36px"
+  mobile_width: "151px"
+  desktop_width: "151px"
 
 footer:
-  copyright_text: ''
+  copyright_text: ""
 
 seo:
   meta_og_title: "Galvanorte Galvanização"

@@ -1,24 +1,43 @@
 <div class="call">
   <div class="call-box-top">
     {% if site.data.contact.phone %}
-    <div class="call-phone my-1"><strong>Telefone: </strong> {{ site.data.contact.phone }} </div>
-    {% endif %}
-    {% if site.data.contact.whatsapp %}
-    <div class="call-phone py-1"><strong>WhatsApp: </strong> <a class="button" style="background-color:#25D366"
-        href="https://api.whatsapp.com/send?phone=5543999143694&text=Ol%C3%A1%2C%20gostaria%20de%20uma%20informa%C3%A7%C3%A3o">
-        <img width="18" height="18" src="/images/logo/whatsapp.svg" alt="" class="img" style="height:18px">
-        {{ site.data.contact.whatsapp }}</a> </div>
-    {% endif %}
-    {% if site.data.contact.email %}
-    <div class="call-emai mt-1"><strong>Email: </strong>
+    <div class="call-phone my-1">
+      <strong>Telefone: </strong> {{ site.data.contact.phone }}
+    </div>
+    {% endif %} {% if site.data.contact.whatsapp %}
+    <div class="call-phone py-1">
+      <strong>WhatsApp: </strong>
+      <a
+        class="button"
+        style="background-color: #0b7c34"
+        href="https://api.whatsapp.com/send?phone=5543999143694&text=Ol%C3%A1%2C%20gostaria%20de%20uma%20informa%C3%A7%C3%A3o"
+      >
+        <img
+          width="18"
+          height="18"
+          src="/images/logo/whatsapp.svg"
+          alt=""
+          class="img"
+          style="height: 18px"
+        />
+        {{ site.data.contact.whatsapp }}</a
+      >
+    </div>
+    {% endif %} {% if site.data.contact.email %}
+    <div class="call-emai mt-1">
+      <strong>Email: </strong>
       {{ site.data.contact.email }}
     </div>
     {% endif %}
   </div>
   {% if include.show_button %}
   <div class="call-box-bottom">
-    <a href="https://maps.google.com/maps?ll=-23.28666,-51.208882&z=13&t=m&hl=pt&gl=US&mapclient=embed&cid=6986290246502533270"
-      class="button" style="text-decoration:none">Ver no Mapa</a>
+    <a
+      href="https://maps.google.com/maps?ll=-23.28666,-51.208882&z=13&t=m&hl=pt&gl=US&mapclient=embed&cid=6986290246502533270"
+      class="button"
+      style="text-decoration: none"
+      >Ver no Mapa</a
+    >
   </div>
   {% endif %}
 </div>
